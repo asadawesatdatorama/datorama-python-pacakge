@@ -19,8 +19,8 @@ def save():
             writer.writerows(datorama_out_put_result)
         myFile = open('/tmp/fileName', 'r')
         with myFile:
-            spamreader = csv.reader(myFile, delimiter=' ', quotechar='|')
-            for row in spamreader:
+            csvReader = csv.reader(myFile, delimiter=' ', quotechar='|')
+            for row in csvReader:
                 print(row)
 
 
@@ -31,8 +31,8 @@ def save_csv(string):
             myFile.write(string)
         myFile = open('/tmp/fileName', 'r')
         with myFile:
-            spamreader = csv.reader(myFile, delimiter=' ', quotechar='|')
-            for row in spamreader:
+            csvReader = csv.reader(myFile, delimiter=' ', quotechar='|')
+            for row in csvReader:
                 print(row)
 
 
